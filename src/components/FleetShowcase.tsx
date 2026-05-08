@@ -22,13 +22,13 @@ export default function FleetShowcase() {
     <section id="fleet" className="bg-brand-black pt-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
-          <span className="text-brand-red text-xs font-black tracking-[0.5em] uppercase mb-4 block">EXOTIC COLLECTION</span>
+          <span className="text-brand-gold text-xs font-black tracking-[0.5em] uppercase mb-4 block">EXOTIC COLLECTION</span>
           <h2 className="text-6xl md:text-8xl font-display font-black italic uppercase tracking-tighter leading-none">
             THE <span className="text-outline text-white/20">FLEET.</span>
           </h2>
         </div>
         <p className="max-w-sm text-sm text-white/40 uppercase tracking-widest font-medium leading-relaxed italic">
-          Meticulously maintained luxury cars and supercars at your fingertips in Dubai.
+          Meticulously maintained luxury cars and supercars in NYC & NJ.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export default function FleetShowcase() {
         {cars.map((item, i) => (
           <motion.div 
             key={i} 
-            className="min-w-[80vw] md:min-w-[40vw] h-[60vh] border border-white/5 bg-brand-gray/50 p-12 flex flex-col justify-between snap-center group hover:bg-brand-red hover:text-white transition-all duration-500"
+            className="min-w-[80vw] md:min-w-[40vw] h-[60vh] border border-white/5 bg-brand-gray/50 p-12 flex flex-col justify-between snap-center group hover:bg-brand-gold hover:text-black transition-all duration-500"
           >
             <div className="flex justify-between items-start">
               <span className="text-sm font-black uppercase tracking-[0.3em] font-mono group-hover:text-black/40">Entry_{i+1}</span>
@@ -64,13 +64,13 @@ export default function FleetShowcase() {
         <div className="flex gap-24 items-center overflow-hidden">
           <div className="flex gap-24 animate-infinite-scroll whitespace-nowrap min-w-full items-center">
             {["FERRARI", "LAMBORGHINI", "PORSCHE", "ROLLS-ROYCE", "MERCEDES", "BMW", "CADILLAC", "MC LAREN"].map((brand, i) => (
-              <span key={i} className="text-2xl md:text-4xl font-display font-black italic opacity-10 hover:opacity-100 hover:text-brand-red transition-all cursor-default">
+              <span key={i} className="text-2xl md:text-4xl font-display font-black italic opacity-10 hover:opacity-100 hover:text-brand-gold transition-all cursor-default">
                 {brand}
               </span>
             ))}
             {/* Mirror for infinite scroll */}
             {["FERRARI", "LAMBORGHINI", "PORSCHE", "ROLLS-ROYCE", "MERCEDES", "BMW", "CADILLAC", "MC LAREN"].map((brand, i) => (
-              <span key={i+'2'} className="text-2xl md:text-4xl font-display font-black italic opacity-10 hover:opacity-100 hover:text-brand-red transition-all cursor-default">
+              <span key={i+'2'} className="text-2xl md:text-4xl font-display font-black italic opacity-10 hover:opacity-100 hover:text-brand-gold transition-all cursor-default">
                 {brand}
               </span>
             ))}
@@ -89,9 +89,9 @@ export default function FleetShowcase() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent opacity-80" />
             <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col gap-4">
-              <span className="text-brand-red font-mono text-[10px] font-bold tracking-widest">{`0${i+1}_SERIES`}</span>
+              <span className="text-brand-gold font-mono text-[10px] font-bold tracking-widest">{`0${i+1}_SERIES`}</span>
               <h3 className="text-4xl font-display font-black italic uppercase italic tracking-tighter">{cat.name}</h3>
-              <div className="flex items-center gap-2 text-white/40 group-hover:text-brand-red transition-colors">
+              <div className="flex items-center gap-2 text-white/40 group-hover:text-brand-gold transition-colors">
                 <span className="text-[10px] font-bold tracking-widest uppercase">View Fleet</span>
                 <ChevronRight size={14} />
               </div>

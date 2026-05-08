@@ -31,11 +31,11 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="flex items-center gap-4 mb-8"
           >
-            <div className="h-[1px] w-12 bg-brand-red"></div>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.8em] text-brand-red uppercase">
-              DUBAI LUXURY REGISTRY
+            <div className="h-[1px] w-12 bg-brand-gold"></div>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.8em] text-brand-gold uppercase">
+              NYC & NJ LUXURY REGISTRY
             </span>
-            <div className="h-[1px] w-12 bg-brand-red"></div>
+            <div className="h-[1px] w-12 bg-brand-gold"></div>
           </motion.div>
 
           <motion.h1 
@@ -54,7 +54,7 @@ export default function Hero() {
             className="flex flex-col md:flex-row items-center gap-8 mb-16"
           >
             <p className="max-w-md text-sm md:text-base text-white/50 uppercase tracking-widest font-medium leading-relaxed italic">
-              Premium car rental experiences in Dubai. From supercars to luxury SUVs, find your perfect ride.
+              Premium car rental experiences in NYC & NJ. Elevate your drive with our elite collection of luxury vehicles.
             </p>
           </motion.div>
 
@@ -64,7 +64,7 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
             className="flex flex-wrap justify-center gap-6"
           >
-            <button className="group relative px-12 py-5 bg-brand-red text-white font-display font-black uppercase text-sm tracking-[0.4em] overflow-hidden">
+            <button className="group relative px-12 py-5 bg-brand-gold text-black font-display font-black uppercase text-sm tracking-[0.4em] overflow-hidden">
               <span className="relative z-10 flex items-center gap-3">
                 Browse Fleet <ArrowRight size={18} />
               </span>
@@ -94,7 +94,7 @@ export default function Hero() {
               transition={{ delay: 1 + (i * 0.1) }}
               className="flex flex-col gap-2 p-4"
             >
-              <div className="flex items-center gap-2 text-brand-red">
+              <div className="flex items-center gap-2 text-brand-gold">
                 {item.icon}
                 <span className="text-[10px] font-bold tracking-widest uppercase opacity-60 font-mono">{item.label}</span>
               </div>

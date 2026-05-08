@@ -17,7 +17,7 @@ export default function Navigation() {
     { name: 'Fleet', href: '#fleet' },
     { name: 'Chauffeur', href: '#chauffeur' },
     { name: 'Blog', href: '#blog' },
-    { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#footer' },
   ];
 
   return (
@@ -25,10 +25,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2 group">
           <img 
-            src="https://zmccarrental.com/assets/zmc-logo-white-header-DQD2EXKW.png" 
-            alt="ZMC Logo" 
-            className="h-8 md:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            src="https://scontent-lga3-3.cdninstagram.com/v/t51.2885-19/505417205_17842471845515248_5353410966034901104_n.jpg?cb=8438d1d6-89aba764&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NTAuYzIifQ&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gE3skDcslDtkC_ORT3Yof3igB7H_KCAns7nEqYwERzVcjt0YHbTZovgKmemnn-iHus&_nc_ohc=sCeqxFyUy4AQ7kNvwEVEZaE&_nc_gid=_SHnF-5YMq8ClJ9D13t2Jw&edm=APoiHPcBAAAA&ccb=7-5&oh=00_Af7k_0VgeW9-hn9dbUnCA6LAJzxybHTZHz1jN_7V09MvSw&oe=6A03DE33&_nc_sid=22de04" 
+            alt="LVElite Motors Logo" 
+            className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105 rounded-full"
           />
+          <span className="font-serif italic font-bold text-xl tracking-tighter text-brand-gold">LVELITE</span>
         </a>
 
         <div className="hidden md:flex items-center gap-10">
@@ -36,19 +37,19 @@ export default function Navigation() {
             <a 
               key={link.name} 
               href={link.href} 
-              className="font-display text-sm font-medium tracking-widest uppercase hover:text-brand-red transition-colors"
+              className="font-display text-sm font-medium tracking-widest uppercase hover:text-brand-gold transition-colors"
             >
               {link.name}
             </a>
           ))}
           <a 
-            href="tel:+971567733228" 
-            className="flex items-center gap-2 px-6 py-2 bg-brand-red text-white font-display text-xs font-bold tracking-[0.2em] uppercase rounded-sm hover:bg-white hover:text-brand-black transition-all"
+            href="#" 
+            className="flex items-center gap-2 px-6 py-2 bg-brand-gold text-black font-display text-xs font-bold tracking-[0.2em] uppercase rounded-sm hover:bg-white hover:text-brand-black transition-all"
           >
             <Phone size={14} />
-            +971 56 773 3228
+            ORDER NOW
           </a>
-          <button className="text-white hover:text-brand-red p-2">
+          <button className="text-white hover:text-brand-gold p-2">
             <Globe size={20} />
           </button>
         </div>
@@ -81,8 +82,8 @@ export default function Navigation() {
               </a>
             ))}
             <a 
-              href="tel:+971567733228" 
-              className="flex justify-center items-center gap-2 w-full py-4 bg-brand-red text-white font-display text-sm font-bold tracking-[0.2em] uppercase rounded-sm"
+              href="#" 
+              className="flex justify-center items-center gap-2 w-full py-4 bg-brand-gold text-black font-display text-sm font-bold tracking-[0.2em] uppercase rounded-sm"
             >
               <Phone size={18} />
               Book Now
